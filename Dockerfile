@@ -1,4 +1,5 @@
-FROM ubuntu:16.04
+#FROM ubuntu:16.04
+FROM ubuntu:xenial
 MAINTAINER Christian Riedl <riedlc@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
