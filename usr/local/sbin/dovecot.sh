@@ -1,4 +1,3 @@
 #!/bin/bash
 
-service dovecot start
-sleep infinity
+/usr/sbin/dovecot -Fc /etc/dovecot/dovecot.conf

@@ -23,6 +23,11 @@ command=/usr/local/sbin/spamass-milter.sh
 
 [program:dovecot]
 command=/usr/local/sbin/dovecot.sh
+
+[program:cron]
+command=/usr/sbin/cron -f
+
 EOF
 
-exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+mkdir -p /var/log/supervisor
+exec /usr/bin/supervisord -c /etc/supervisor/supervisord.conf
